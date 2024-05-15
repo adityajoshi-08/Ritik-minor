@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+  <title>Sign in & Sign up Form</title>
+</head>
+<body>
+  <div class="container">
+    <div class="forms-container">
+      <div class="signin-signup">
+        <form action="#" class="sign-in-form" id="sign-in-form">
+          <script>
+            function validateForm() {
+          var email = document.myform.email;
+          var password = document.myform.password;
+          var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email format check
+
+          if (email.value == "") {
+            alert("Please enter your email address.");
+            return false;
+          } else if (!emailRegex.test(email.value)) {
+            alert("Please enter a valid email address.");
+            return false;
+          } else if (password.value == "") {
+            alert("Please enter your password.");
+            return false;
+          } else if (password.value.length < 8) { // Minimum password length check
+            alert("Password must be at least 8 characters long.");
+            return false;
+          }
+          window.location.assign("dashboard.html");
+
+          return true;
+        }
+
+        </script>
+          <h2 a href="dashboard.html" class="title">Sign in</h2>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Username" id="signin-username" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" id="signin-password" />
+          </div>
+          <input type="submit" value="Login" class="btn solid" />
+          <p class="social-text">Or Sign in with social platforms</p>
+          <div class="social-media">
+            <a href="#" class="social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+  
+        </form>
+        <form action="#" class="sign-up-form" id="sign-up-form">
+          <h2 class="title">Sign up</h2>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Username" id="signup-username" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="Email" id="signup-email" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" id="signup-password" />
+          </div>
+          <input type="submit" class="btn" value="Sign up" />
+          <p class="social-text">Or Sign up with social platforms</p>
+          <div class="social-media">
+            <a href="#" class="social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="panels-container">
+      <div class="panel left-panel">
+        <div class="content">
+          <h3>New here ?</h3>
+          <p></p>
+          <button  class="btn transparent" id="sign-up-btn">Sign up</button>
+        </div>
+        <img src="102.png" class="image" alt="" />
+      </div>
+      <div class="panel right-panel">
+        <div class="content">
+          <h3>One of us ?</h3>
+          <p></p>
+          <button class="btn transparent" id="sign-in-btn">Sign in</button>
+        </div>
+        <img src="101.png" class="image" alt="" />
+      </div>
+    </div>
+  </div>
+  <script src="script.js"> </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const signInForm = document.getElementById('sign-in-form');
+
+      // Function to handle sign-in form submission
+      signInForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+        var username = document.getElementById("signin-username").value;
+        var password = document.getElementById("signin-password").value;
+        // Perform form validation here if needed
+        // For demonstration purpose, assuming the validation is successful
+        if (username && password) {
+          window.location.href = 'dashboard.html'; // Redirect to dashboard page
+        } else {
+          alert('Please enter both username and password.');
+        }
+      });
+    });
+
+    // Function to validate sign-up form
+    function validateSignUpForm() {
+      var username = document.getElementById("signup-username").value;
+      var email = document.getElementById("signup-email").value;
+      var password = document.getElementById("signup-password").value;
+      if (username.trim() === "") {
+        alert("Username must be filled out");
+        return false;
+      } else if (email.trim() === "") {
+        alert("Email must be filled out");
+        return false;
+      } else if (password.trim() === "") {
+        alert("Password must be filled out");
+        return false;
+      }
+      // Redirect to sign-in page after successful sign-up
+      window.location.href = "signin.html";
+      return false; // Prevent form submission
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Material CDN-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+    <!-- stylesheet -->
+    <link rel ="stylesheet" href="./styleD.css">
+    
+</head>
+
+<body>
+    <div class ="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./14681033_1753418778264748_3993724439955132671_o.jpg">
+                    
+                    <h2>TPMS</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#" >
+                    <span class="material-icons-sharp">mail_outline</span>
+                    <h3>Message</h3>
+                    <span class="message-count">3</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">report</span>
+                    <h3>Report</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">settings</span>
+                    <h3>Setting</h3>
+                </a>
+                <a href="index.html">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+
+
+        <main>
+            <h1 class="dashboard">Dashboard</h1>
+            <div class="date">
+                <span id="current-date"></span>
+            </div>
+            <div class="main" >
+                <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+                <div class="head">  
+                    <h1 class="head_1"><span>MUJ's</span></h1>
+                    <p class="head_1">THE PROJECT MANAGEMENT SYSTEM</p>  
+                </div>
+                <ul>
+                    <li>
+                        <i class="icon uil uil-capture"></i>
+                        <div class="progress one">
+                            <p>1</p>
+                            <i class="uil uil-check"></i>
+                        </div>
+                        <p class="text">Project Assigned</p>
+                    </li>
+                    <li>
+                        <i class="icon uil uil-clipboard-notes"></i>
+                        <div class="progress two">
+                            <p>2</p>
+                            <i class="uil uil-check"></i>
+                        </div>
+                        <p class="text">Fill Details</p>
+                    </li>
+                    <li>
+                        <i class="icon uil uil-file"></i>
+                        <div class="progress three">
+                            <p>3</p>
+                            <i class="uil uil-check"></i>
+                        </div>
+                        <p class="text">Submit Synopsis</p>
+                    </li>
+                    <li>
+                        <i class="icon uil uil-presentation-line"></i>
+                        <div class="progress four">
+                            <p>4</p>
+                            <i class="uil uil-check"></i>
+                        </div>
+                        <p class="text">Mid-Term Presentation</p>
+                    </li>
+                    <li>
+                        <i class="icon uil uil-map-marker"></i>
+                        <div class="progress five">
+                            <p>5</p>
+                            <i class="uil uil-check"></i>
+                        </div>
+                        <p class="text">Final Presentation</p>
+                    </li>
+                </ul>
+            </div>
+        
+    
+
+    <!--------- Table ---------->
+    <div class="data-table">
+        <h2>My Information</h2>
+    
+    <table>
+        <thead>
+          <tr>
+            <th class="heading">Name</th>
+            <th class="heading">Registration No</th>
+            <th class="heading">Branch</th>
+            <th class="heading">Mobile No</th>
+            <th class="heading">Project Assigned</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ritik Jaykar</td>
+            <td>219202044</td>
+            <td>Information Technology</td>
+            <td>1234567890</td>
+            <td>Project A</td>
+          </tr>
+          <tr>
+            <td>Rohit Dabas</td>
+            <td>2023001</td>
+            <td>Information Technology</td>
+            <td>1234567890</td>
+            <td>Project A</td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+      <a href="#">Show All</a>
+    </div> 
+    </main>
+    <!-- --------------END OF MAIN ------------------>
+    <div class="right">
+        <div class="top">
+            <button id="menu-btn">
+                <span class="material-icons-sharp">menu</span>
+            </button>
+            <div class="theme-toggler">
+                <span class="material-icons-sharp active">light_mode</span>
+                <span class="material-icons-sharp">dark_mode</span>
+            </div>
+            <div class="profile">
+                <div class="info">
+                    <!-- <b>Ritik</b> -->
+                    <p>Hey,<b><span id="user-name">Admin</span></b></p>
+                    <small class="text-muted">Ritik</small>
+                </div>
+                <div class="profile-photo">
+                    <span class="material-icons-sharp">person</span>
+                </div>
+            </div>
+        </div>
+        <!------- END OF THE TOP -------->
+        <div class="recent-update">
+            <h2>Recent Update</h2>
+            <div class="updates">
+                <div class="update">
+                    <div class="profile-photo">
+                        <span class="material-icons-sharp">emoji_emotions</span>
+                    </div>
+                    <div class="message">
+                        <p><b>Ravinder </b>asked about you today!!!</p>
+                        <small class="text-muted">2 min ago</small>
+                    </div>
+                </div>
+                    <div class="update">
+                        <div class="profile-photo1">
+                            <span class="material-icons-sharp">emoji_emotions</span>
+                        </div>
+                        <div class="message">
+                            <p>Hi Ritik <b>How are you?</b></p>
+                            <small class="text-muted">2 min ago</small>
+                        </div>
+                    </div>
+                        <div class="update">
+                            <div class="profile-photo2">
+                                <span class="material-icons-sharp">emoji_emotions</span>
+                            </div>
+                            <div class="message">
+                                <p><b>Rohit this side</b></p>
+                                <small class="text-muted">2 min ago</small>
+                            </div>
+                        </div>           
+        </div>
+
+
+        <script src="app.js"></script>
+    </div>
+</div>  
+<script></script>
+<script>
+    // Function to update current date and time
+    function updateDateTime() {
+        var currentDate = new Date();
+        var dateElement = document.getElementById("current-date");
+        dateElement.innerText =currentDate.toDateString() + "  " + currentDate.toLocaleTimeString();
+    }
+
+    // Call the function initially and then update it every second
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+
+</script>
+</body>
+</html>
